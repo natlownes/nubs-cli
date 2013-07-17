@@ -18,5 +18,6 @@ view the output of your syslog
 ### todo
 * detect when server goes down and attempt reconnects
 * tests, whoops
+* optparse for help flag....whoops
 
 
