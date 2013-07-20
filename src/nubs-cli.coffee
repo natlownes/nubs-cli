@@ -10,7 +10,18 @@ process.stdin.on 'data', (d) ->
   process.stdout.write(d)
 
 webUri    = process.argv[2]
-socketUri = webUri.replace('/o/', '/socket/o/').replace(/^http\:\/\//, '')
+if not webUri?
+  console.log """
+  USAGE:  nubs [url] - obtain url at http://nubs.narf.io/
+  """
+  process.exit(1)
+
+toSocketUri = (str) ->
+  #str.replace('/o/', '/socket/o/')
+  "#{str}/socket"
+    .replace(/^http\:\/\//, '')
+
+socketUri = toSocketUri(webUri)
 
 setup = (uri) ->
   # hit uri to setup socket listener
