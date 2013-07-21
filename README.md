@@ -1,6 +1,6 @@
 # nubs-cli
 
-command line client for [http://nubs.narf.io/](nubs); a program to pipe stuff to urls for viewing by you
+command line client for [nubs](http://nubs.narf.io/); a program to pipe stuff to urls for viewing by you
 and/or other parties.  like a github gist or pastie that updates in realtime but
 doesn't get saved
 
