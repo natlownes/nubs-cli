@@ -1,6 +1,6 @@
 {
   "name": "nubs-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "command line client for nubs",
   "main": "./lib/nubs-cli.js",
   "scripts": {

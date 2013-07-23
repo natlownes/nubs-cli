@@ -1,6 +1,7 @@
 Q      = require 'q'
 colors = require 'colors'
 sockjs = require 'sockjs-stream'
+url    = require 'url'
 http   = require 'http'
 
 
@@ -25,13 +26,25 @@ socketUri = toSocketUri(webUri)
 
 setup = (uri) ->
   # hit uri to setup socket listener
-  request = Q.defer()
+  parsedUri = url.parse(uri)
 
-  http.get webUri, (d) ->
-    request.resolve(d)
-  .on 'error', (e) -> request.reject(e)
+  def = Q.defer()
+  options =
+    hostname: parsedUri.hostname
+    port:     parsedUri.port
+    path:     parsedUri.path
+    method:   'GET'
+    agent:    false
+    headers:
+      'Accept': 'text/html'
+      'Host':   parsedUri.hostname
+      'User-Agent': 'nubs-cli'
 
-  request.promise
+  request = http.request options, (d) -> def.resolve(d)
+  request.on 'error', (e) -> def.reject(e)
+  request.end()
+
+  def.promise
 
 setup(webUri)
   .fail (error) ->
