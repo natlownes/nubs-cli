@@ -9,7 +9,10 @@
   "bin": {
     "nubs": "./bin/nubs"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/natlownes/nubs-cli.git"
+  },
   "author": "",
   "license": "BSD",
   "dependencies": {
@@ -23,6 +26,10 @@
     "mocha": "~1.12.0",
     "honk-cake": "git://github.com/natlownes/honk-cake.git#dependencies",
     "chai": "~1.7.2",
-    "express": "~3.3.4"
+    "express": "~3.3.4",
+    "shoe": "0.0.12"
+  },
+  "engines": {
+    "node": ">=0.8"
   }
 }
