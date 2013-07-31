@@ -19,6 +19,9 @@
     "colors": "~0.6.0-1"
   },
   "devDependencies": {
-    "coffee-script": "~1.6.3"
+    "coffee-script": "~1.6.3",
+    "mocha": "~1.12.0",
+    "honk-cake": "git://github.com/natlownes/honk-cake.git#dependencies",
+    "chai": "~1.7.2"
   }
 }
