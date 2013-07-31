@@ -1,6 +1,6 @@
 {
   "name": "nubs-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "command line client for nubs",
   "main": "./lib/nubs-cli.js",
   "scripts": {
@@ -29,6 +29,20 @@
     "express": "~3.3.4",
     "shoe": "0.0.12"
   },
+  "keywords": [
+    "cli",
+    "pipe",
+    "pipes",
+    "streaming",
+    "gist",
+    "pastie",
+    "nubs",
+    "narf.io",
+    "screen sharing",
+    "terminal",
+    "ssh",
+    "websockets"
+  ],
   "engines": {
     "node": ">=0.8"
   }
