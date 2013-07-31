@@ -1,0 +1,8 @@
+#!/usr/bin/env coffee
+
+# command line util placeholder to directly load
+# coffee files, so we don't have to do the make step
+# to use the non coffee dependent ./bin/nubs
+
+require('../src/nubs-cli')
+
