@@ -24,7 +24,7 @@
   "devDependencies": {
     "coffee-script": "~1.6.3",
     "mocha": "~1.12.0",
-    "honk-cake": "git://github.com/natlownes/honk-cake.git#dependencies",
+    "honk-cake": "git://github.com/natlownes/honk-cake.git#develop",
     "chai": "~1.7.2",
     "express": "~3.3.4",
     "shoe": "0.0.12"
